@@ -1,0 +1,60 @@
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  /* clip-path: circle(0% at 80% 10%);
+  transition: clip-path 2s ease-out; */
+}
+
+/* 클릭 후 clip-path 애니메이션 */
+.image-wrapper.reveal {
+  /* clip-path: circle(150% at 80% 10%); */
+}
+
+/* 반전된 이미지 스타일 (항상 보이도록) */
+.invert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: invert(100%);
+  z-index: 0;
+  /* clip-path: circle(150% at 80% 10%);
+  transition: clip-path 2s ease-out; */
+}
+
+/* 원본 이미지 스타일 (처음에 숨겨져 있음) */
+.original {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  /* opacity: 0; */
+  z-index: 1;
+  clip-path: circle(0% at 80% 30%);
+  transition: clip-path 3s ease-out;
+}
+
+
+.image-wrapper.black-mode .invert {
+  clip-path: circle(150% at 80% 10%);
+}
+
+/* .image-wrapper.while-mode .original {
+  clip-path: circle(150% at 80% 10%);
+} */
+
+.image-wrapper.while-mode .original {
+  clip-path: circle(150% at 80% 10%);
+}
