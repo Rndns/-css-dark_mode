@@ -43,18 +43,18 @@
   /* opacity: 0; */
   z-index: 1;
   clip-path: circle(0% at 80% 30%);
-  transition: clip-path 3s ease-out;
+  transition: clip-path 2s ease-out;
 }
 
 
-.image-wrapper.black-mode .invert {
-  clip-path: circle(150% at 80% 10%);
-}
+/* .image-wrapper.black-mode .invert {
+  clip-path: circle(130% at 80% 10%);
+} */
 
 /* .image-wrapper.while-mode .original {
   clip-path: circle(150% at 80% 10%);
 } */
 
 .image-wrapper.while-mode .original {
-  clip-path: circle(150% at 80% 10%);
+  clip-path: circle(130% at 80% 10%);
 }
