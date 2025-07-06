@@ -1,0 +1,77 @@
+$bg-color: #FAFCFF;
+$wrapper-bg-color: #17171C;
+$text-font-size: 2rem;
+// $button-color: #E5F1FE;
+// $button-border: 1px solid #E5F1FE;
+
+.bg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: $bg-color;
+  overflow: hidden;
+}
+
+.white-mode {
+  position: absolute;
+}
+.wrapper {
+  position: absolute;
+  inset: 0;
+  background: $wrapper-bg-color;
+  clip-path: circle(0% at 80% 10%);
+  transition: clip-path 2s ease-out;
+  z-index: 1;
+
+  &.dark-mode {
+    clip-path: circle(130% at 80% 10%);
+  }
+}
+
+.text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $text-font-size;
+  mix-blend-mode: difference;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.button {
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 5;
+  background-color: rgb(21, 11, 1);
+  color: rgb(227, 229, 227);
+  border: rgb(21, 11, 1);
+  mix-blend-mode: difference;
+
+  &:focus {
+    outline: none
+  }
+  &:hover {
+    border-color: transparent
+  }
+}
+
+.bg_button {
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: rgb(65, 55, 54);
+  color: #000000;
+  border: rgb(65, 55, 54);
+
+  &:focus {
+    outline: none
+  }
+  &:hover {
+    border-color: transparent
+  }
+}

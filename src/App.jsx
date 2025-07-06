@@ -1,5 +1,6 @@
 import DarkModeImg from "./component/DarkModeImg";
 import DarkMode from "./component/DarkMode.jsx";
+import Index from "./component/Index.js";
 
 export default function App() {
 
@@ -10,6 +11,7 @@ export default function App() {
       <DarkModeImg />
       {/* dark-mode */}
       <DarkMode></DarkMode>
+      <Index/>
     </div>
   );
 }

@@ -1,0 +1,56 @@
+.menu.coffe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 333px;
+  height: 120px;
+  background-color: #E5F1FE;
+  padding: 16px 34px 20px 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.menu_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  text-align: left;
+
+  .menu_name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A1A1A;
+  }
+
+  .menu_price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #528EFF;
+  }
+}
+
+.menu_amount_controler {
+  display: flex;
+  align-items: center;
+  // margin-top: 10px;
+  color: #1A1A1A;
+
+  button {
+    all: unset;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #1A1A1A;
+  }
+
+  .down_mount, .up_mount {
+    margin: 0 20px;
+  }
+}
+
+.menu_img {
+  margin: 9px 0 5px;
+  border-radius: 16px;
+}
